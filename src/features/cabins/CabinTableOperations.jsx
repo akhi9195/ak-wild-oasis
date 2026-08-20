@@ -1,5 +1,12 @@
+import TableOperations from "../../ui/TableOperations";
+import Filter from "../../ui/Filter";
+
 function CabinTableOperations() {
-  return <div>CabinTableOperations</div>;
+  return (
+    <TableOperations>
+      <Filter />
+    </TableOperations>
+  );
 }
 
 export default CabinTableOperations;
