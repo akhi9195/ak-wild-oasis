@@ -100,13 +100,13 @@ function CreateCabinForm({ cabinToEdit = {}, onCloseModal }) {
 
       <FormRow
         label="Description for website"
-        error={errors?.descreption?.message}
+        error={errors?.description?.message}
       >
         <Textarea
           type="number"
           id="description"
           defaultValue=""
-          {...register("descreption", { required: "This field is required" })}
+          {...register("description", { required: "This field is required" })}
         />
       </FormRow>
 

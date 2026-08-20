@@ -74,7 +74,7 @@ function CabinRowV1({ cabin }) {
     maxCapacity,
     regularPrice,
     discount,
-    descreption,
+    description,
   } = cabin;
 
   function handleDuplicate() {
@@ -83,7 +83,7 @@ function CabinRowV1({ cabin }) {
       maxCapacity,
       regularPrice,
       discount,
-      descreption,
+      description,
       image,
     });
   }

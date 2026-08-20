@@ -60,7 +60,7 @@ function CabinRow({ cabin }) {
     regularPrice,
     discount,
     image,
-    descreption,
+    description,
   } = cabin;
 
   function handleDuplicate() {
@@ -71,7 +71,7 @@ function CabinRow({ cabin }) {
       regularPrice,
       discount,
       image,
-      descreption,
+      description,
     });
   }
 
