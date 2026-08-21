@@ -9,11 +9,20 @@ function LoginForm() {
   const [email, setEmail] = useState("akhilesh@servicenow.com");
   const [password, setPassword] = useState("password");
   const { login, isLoading } = useLogin();
+
   function handleSubmit(e) {
     e.preventDefault();
 
     if (!email || !password) return;
-    login({ email, password });
+    login(
+      { email, password },
+      {
+        onSettled: () => {
+          setEmail("");
+          setPassword("");
+        },
+      },
+    );
   }
 
   return (
