@@ -36,6 +36,7 @@ function LoginForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           disabled={isLoading}
+          placeholder="user2@test.com"
         />
       </FormRowVertical>
       <FormRowVertical label="Password">
